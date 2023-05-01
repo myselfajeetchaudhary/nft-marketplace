@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: #2B2B2B;
+        color: #FFFFFF;
+    }
+}
+
+@layer components {
+    .icon {
+        @apply h-6 w-6 inline-block mr-3;
+    }
+    .button {
+        @apply transform duration-300 hover:scale-95 rounded-[20px] box-border border-2 border-[#A259FF] font-semibold text-[16px] leading-[22px];
+    }
+}
